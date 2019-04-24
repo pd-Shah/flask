@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+	{% if data.title %}
+		{{ data.title }}
+	{% else %}
+		Just Welcome !
+	{% endif %}
+{% endblock %}
+
+{% block content %}
+	{% for post in data.posts %}
+		<div class="">
+			<p> {{ post.author.username }} says: <b> {{ post.body }}</b> </p>
+		</div>
+	{% endfor %}
+{% endblock %}
