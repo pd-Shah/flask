@@ -1,4 +1,0 @@
-FLASK_APP=microblog
-FLASK_ENV=development
-FLASK_RELOAD=True
-FLASK_DEBUG=True
